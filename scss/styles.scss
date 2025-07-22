@@ -30,6 +30,26 @@ ul {
   list-style: none;
 }
 
+li {
+  position: relative;
+}
+
+.left_gnb li::before {
+  content: "";
+  width: calc(100% - 59px);
+  height: 1.3px;
+  background-color: rgb(114, 90, 88);
+  position: absolute;
+  left: 29px;
+  bottom: 0px;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.left_gnb li:hover::before {
+  transform: scaleX(1);
+}
+
 .left_gnb {
   padding-right: 80px;
 }
@@ -53,7 +73,34 @@ ul {
 }
 
 .right_gnb li:last-child a {
+  display: flex;
+  background-image: url(../assets/img/insta_logo.png);
+  width: 24px; /* ✅ 이미지 너비에 맞게 조정 */
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-left: 31.17px;
+
   border-right: none;
+}
+
+.right_gnb li::before {
+  content: "";
+  width: calc(100% - 59px);
+  height: 1.3px;
+  background-color: rgb(114, 90, 88);
+  position: absolute;
+  left: 29px;
+  bottom: 5px;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.right_gnb li:hover::before {
+  transform: scaleX(1);
+}
+
+.right_gnb li:last-child::before {
+  display: none;
 }
 
 a {
