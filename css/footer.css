@@ -4,20 +4,6 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Lato";
-  src: url(../assets/font/Lato/Lato-Light.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Baskervville";
-  src: url(../assets/font/Baskervville/Baskervville-VariableFont_wght.ttf)
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 footer {
   background-color: #f8f6f4;
   width: 100%;
