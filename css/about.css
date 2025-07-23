@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  background-color: #F8F6F4;
+}
+
+.about h1 {
+  color: #725A58;
+}
+
+.about h1 span {
+  color: #E3B6B1;
+}
