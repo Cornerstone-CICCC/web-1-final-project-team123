@@ -102,17 +102,16 @@ body {
   display: none;
 }
 
-a {
+.header a {
   text-decoration: none;
   color: rgba(114, 90, 88, 1);
 }
 
-.sidebar .logo img {
+.header .logo img {
   display: block;
-  height: 132px;
-  width: 126.19px;
+  max-width: 126.19px;
 }
 
-li {
+.header li {
   list-style: none;
 }
