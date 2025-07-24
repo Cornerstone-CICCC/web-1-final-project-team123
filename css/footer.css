@@ -8,34 +8,37 @@ footer {
   background-color: #f8f6f4;
   width: 100%;
 }
+
 footer .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
-  padding-top: 40px;
+  padding-top: 36px;
 }
+
 footer .logo img {
   width: 7.887rem;
   height: 8.25rem;
 }
+
 footer .logo p {
   font-size: 14px;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
   color: #191919;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 16px 0;
+  letter-spacing: 0.5px;
 }
+
 footer address {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
+
 footer address img {
   width: 24px;
   height: 24px;
@@ -45,9 +48,9 @@ footer address img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 81.68px;
-  padding-top: 24px;
+  padding: 23px 0 35px 0;
 }
+
 .copyright p {
   font-family: "Lato", sans-serif;
   color: #725a58;
@@ -58,31 +61,81 @@ footer address img {
   border-top: 0.5px solid #191919;
   border-bottom: 0.5px solid #191919;
   margin: 0 auto;
-  padding: 10px 0;
-  width: 80%;
+  padding: 26px 0;
+  width: 1000px;
 }
 
-.footer_menu ul {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(4, 1fr);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  gap: 24px;
-}
-@media screen and (min-width: 768px) {
-  .footer_menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
 .footer_menu ul a {
   display: block;
   text-decoration: none;
   color: #725a58;
   font-size: 20px;
   font-family: "Baskervville", sans-serif;
+}
+
+.footer_menu li {
+  position: relative;
+}
+
+.footer_menu ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 기본 2열 */
+  row-gap: 20px;
+  column-gap: 60px;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 500px; /* 너비 제한 */
+}
+
+.link li::before {
+  content: "";
+  width: calc(100% - -2px);
+  height: 1.3px;
+  background-color: rgb(114, 90, 88);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.link li:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer_menu {
+    width: 500px;
+  }
+
+  .footer_menu ul {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿 이상일 때 3열 */
+  }
+
+  .footer_menu li {
+    position: relative;
+  }
+
+  .link li::before {
+    width: calc(100% - -2px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer_menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  /* 
+  .footer_menu {
+    width: 500px;
+  } */
 }

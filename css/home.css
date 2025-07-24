@@ -1,1 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+KR:wght@200..900&family=Oswald:wght@200..700&family=SUSE:wght@100..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.firstMain {
+  background-image: url(../img/home_main.png);
+  background-size: cover; /* 요소에 꽉 차게 */
+  background-repeat: no-repeat; /* 반복 방지 */
+
+  height: 625px;
+}
+
+.container {
+  text-align: center;
+  padding: 267px 0 101px 0;
+
+  font-style: normal;
+  color: white;
+}
+
+.container img {
+  width: 607px;
+  height: 98px;
+}
+
+.container p {
+  font-family: "Lato", sans-serif;
+  padding: 46px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.container .consultation {
+  margin: 0 auto;
+  width: 222px;
+  height: 62px;
+  border: 1px solid white;
+
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;
+}
+
+.container .consultation a {
+  text-decoration: none;
+  color: white;
+
+  font-family: "Baskervville", sans-serif;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+  .main_img {
+    width: 100%;
+  }
+}

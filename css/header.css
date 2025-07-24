@@ -14,8 +14,7 @@ body {
 .header {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
-  height: 196px;
+  margin: 32px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,4 +106,16 @@ body {
 
 .header li {
   list-style: none;
+}
+
+/************************ MOBILE : 768 ************************/
+
+@media (max-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .header ul {
+    display: flex;
+    justify-content: center;
+  }
 }
