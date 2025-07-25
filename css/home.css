@@ -6,15 +6,19 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+}
+
 .firstMain {
   background-image: url(../img/home_main.png);
-  background-size: cover; /* 요소에 꽉 차게 */
-  background-repeat: no-repeat; /* 반복 방지 */
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
   height: 625px;
 }
 
-.container {
+.firstMain .container {
   text-align: center;
   padding: 267px 0 101px 0;
 
@@ -22,30 +26,30 @@
   color: white;
 }
 
-.container img {
+.firstMain .container img {
   width: 607px;
   height: 98px;
 }
 
-.container p {
+.firstMain .container p {
   font-family: "Lato", sans-serif;
   padding: 46px 0;
   font-size: 18px;
   font-weight: 300;
 }
 
-.container .consultation {
+.firstMain .container .consultation {
   margin: 0 auto;
   width: 222px;
   height: 62px;
   border: 1px solid white;
 
   display: flex;
-  justify-content: center; /* 가로 중앙 */
+  justify-content: center;
   align-items: center;
 }
 
-.container .consultation a {
+.firstMain .container .consultation a {
   text-decoration: none;
   color: white;
 
@@ -55,8 +59,28 @@
   font-weight: 400;
 }
 
+.firstMain .message_img {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  right: 0;
+  top: 80%;
+}
+
+.firstMain .message_img img {
+  width: 41px;
+  height: 41px;
+}
+
+/* 
 @media screen and (min-width: 1200px) {
   .main_img {
     width: 100%;
   }
-}
+} */

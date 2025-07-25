@@ -11,28 +11,79 @@
   </head>
   <body>
     <header>
-      <div class="header">
-        <ul class="left_menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">My Work</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Classes</a></li>
-        </ul>
-        <a href="#" class="logo"><img src="./img/logo.png" alt="" /></a>
-        <ul class="right_menu">
-          <li><a href="#">Beauty Tips</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#" class="insta_logo"
+      <section class="header">
+        <div class="header_desktop">
+          <div class="header_container">
+            <ul class="left_menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">My Work</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Classes</a></li>
+            </ul>
+            <a href="#" class="logo"><img src="./img/logo.png" alt="" /></a>
+            <ul class="right_menu">
+              <li><a href="#">Beauty Tips</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <a href="#" class="insta_logo"
+                  ><img src="./img/insta_logo.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header_mobile">
+          <div class="mobile_container">
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="#" class="mobile_logo"
+              ><img src="./img/logo.png" alt=""
+            /></a>
+            <a href="#" class="mobile_insta"
               ><img src="./img/insta_logo.png" alt=""
             /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="header__nav__mobile" onclick="toggleMenu()">
-        <span></span>
-      </div>
+          </div>
+          <nav class="nav-menus" id="navMenus">
+            <ul class="mobile_menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">My Work</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Beauty Tips</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="header_wrap">
+              <address>
+                <div class="header_phone">
+                  <a href="tel:+11234567890">
+                    <img src="./img/phone_logo.png" alt="phone_logo" />
+                  </a>
+                </div>
+                <div class="header_whatsapp">
+                  <a href="tel:+11234567890">
+                    <img src="./img/whatsapp_logo.png" alt="whatsapp_logo" />
+                  </a>
+                </div>
+                <div class="header_instagram">
+                  <a href="http://www.instagram.com">
+                    <img src="./img/insta_logo.png" alt="insta_logo" />
+                  </a>
+                </div>
+              </address>
+              <div class="header_text">
+                <p>Expert Makeup and Hairstyle Studio</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <main>
@@ -43,32 +94,43 @@
           <div class="consultation">
             <a href="#">Free Consultation</a>
           </div>
+          <div class="message_img">
+            <img src="./img/message.png" alt="message" />
+          </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo_img" />
-        <p>Expert Makeup and Hairstyle Studio</p>
+      <div class="footer_wrap">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo_img" />
+          <p>Expert Makeup and Hairstyle Studio</p>
+        </div>
+        <address>
+          <div class="phone">
+            <a href="tel:+11234567890">
+              <img src="./img/phone_logo.png" alt="phone_logo" />
+            </a>
+          </div>
+          <div class="whatsapp">
+            <a href="tel:+11234567890">
+              <img src="./img/whatsapp_logo.png" alt="whatsapp_logo" />
+            </a>
+          </div>
+          <div class="instagram">
+            <a href="http://www.instagram.com">
+              <img src="./img/insta_logo.png" alt="insta_logo" />
+            </a>
+          </div>
+        </address>
       </div>
-      <address>
-        <div class="phone">
-          <a href="tel:+11234567890">
-            <img src="./img/phone_logo.png" alt="phone_logo" />
-          </a>
-        </div>
-        <div class="whatsapp">
-          <a href="tel:+11234567890">
-            <img src="./img/whatsapp_logo.png" alt="whatsapp_logo" />
-          </a>
-        </div>
-        <div class="instagram">
-          <a href="http://www.instagram.com">
-            <img src="./img/insta_logo.png" alt="insta_logo" />
-          </a>
-        </div>
-      </address>
       <div class="footer_menu">
         <ul class="link">
           <li><a href="#">Home</a></li>
@@ -84,5 +146,15 @@
         <p>Copyright 2024, Carla Beauty</p>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenus = document.getElementById("navMenus");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenus.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
