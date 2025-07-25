@@ -90,3 +90,11 @@
   font-size: 14px;
   padding: 24px 0 40px 0;
 }
+
+@media screen and (min-width: 768px) {
+  .footer_menu .link {
+    grid-template-columns: repeat(7, 1fr);
+    white-space: nowrap;
+    padding: 26px 0;
+  }
+}
