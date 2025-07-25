@@ -100,6 +100,24 @@ header {
 .mobile_menu a {
   text-decoration: none;
   color: #725a58;
+
+  position: relative;
+}
+
+.mobile_menu li a::before {
+  content: "";
+  width: calc(100% - 1px);
+  height: 1.3px;
+  background-color: rgb(114, 90, 88);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.mobile_menu li a:hover::before {
+  transform: scaleX(1);
 }
 
 .header_wrap address {
