@@ -113,6 +113,8 @@ a {
   align-items: center;
   text-align: center;
   background-color: #fbfafa;
+
+  flex-direction: column;
 }
 
 .secondMain_container {
@@ -194,4 +196,67 @@ a {
   font-weight: 300;
   text-align: left;
   line-height: 1.4;
+}
+
+.line_brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+  padding: 12px 0 60px;
+}
+
+.line_brands span {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Baskervville", sans-serif;
+  color: #725a58;
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: 24px;
+  width: 328px;
+}
+
+.line_brands span::before,
+.line_brands span::after {
+  content: "";
+  flex: 1;
+  height: 0.5px;
+  background-color: #888888;
+}
+
+.line_brands span::before {
+  margin-right: 20px;
+}
+
+.line_brands span::after {
+  margin-left: 20px;
+}
+
+.brand_logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+}
+
+@media screen and (min-width: 630px) {
+  /* .secondMain_container {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+
+  .secondMain_intro {
+    margin: 91.19px 0 0 80px;
+    text-align: left;
+  }
+
+  .secondMain_intro img {
+    height: auto;
+    width: 38.33px;
+  } */
 }
