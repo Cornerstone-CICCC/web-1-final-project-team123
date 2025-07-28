@@ -245,18 +245,41 @@ a {
 }
 
 @media screen and (min-width: 630px) {
-  /* .secondMain_container {
+  .secondMain_container {
     flex-direction: row-reverse;
     display: flex;
   }
 
+  .secondMain_container .sub-sign {
+    padding: 32px 0;
+    display: flex;
+    justify-content: right;
+  }
+
+  .secondMain_container .sub-btn {
+    margin: -83px 0;
+  }
+
   .secondMain_intro {
-    margin: 91.19px 0 0 80px;
+    margin: 57.19px 0 0 80px;
     text-align: left;
   }
 
   .secondMain_intro img {
     height: auto;
     width: 38.33px;
-  } */
+  }
+
+  .line_brands span {
+    margin: 40px 0 36px 0;
+    width: 862px;
+  }
+  .brand_logos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    margin: 44px 267.75px 36px;
+  }
 }
