@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    margin-bottom: 68px;
+    padding-bottom: 68px;
   }
   .heading-word {
     font-size: 48px;
