@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #f8f6f4;
+}
+
+.wedding,
+.party_time,
+.photoshoot {
+  background-color: #fae9e7;
+}
+
+.service_title {
+  color: #725a58;
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  padding: 40px 0 24px;
+}
+
+.services_home span {
+  display: block;
+  border-bottom: 1px solid #e3b6b1;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.services_home p {
+  color: #191919;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  padding: 24px 16px 40px;
+}
+
+.wedding,
+.party_time,
+.photoshoot {
+  text-align: center;
+}
+
+.text {
+  padding: 0 19px;
+  margin: 24px 0 0 0;
+  text-align: left;
+
+}
+
+.wedding img,
+.party_time img,
+.photoshoot img {
+  width: 360px;
+  height: 380px;
+  display: inline-block;
+}
+
+.wedding h2,
+.party_time h2,
+.photoshoot h2 {
+  color: #725a58;
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  padding: 24px 0 16px;
+  text-align: left;
+  padding: 24px 19px 16px;
+}
+
+.wedding .cost img,
+.party_time .cost img,
+.photoshoot .cost img {
+  width: 11.67px;
+  height: 15.83px;
+}
+
+.wedding .time img,
+.party_time .time img,
+.photoshoot .time img {
+  width: 18px;
+  height: 18px;
+}
+
+.cost,
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+  margin-left: 19px;
+}
+
+.cost img,
+.time img {
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.cost p,
+.time p {
+  color: #191919;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.wedding h3,
+.party_time h3,
+.photoshoot h3 {
+  color: #191919;
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 16px;
+}
+
+.wedding p,
+.party_time p,
+.photoshoot p {
+  color: #191919;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  display: flex;
+  justify-content: left;
+}
+
+.btn_get {
+  background-color: #fae9e7;
+  color: #5e4a49;
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  border: 1px solid #5e4a49;
+  width: 322px;
+  height: 54px;
+  margin: 24px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .service_title {
+    font-size: 80px;
+    line-height: 130%;
+    padding: 24px 224.5px 0;
+  }
+
+  .services_home span {
+    /* display: inline-block; */
+    /* border-bottom: 1px solid #E3B6B1; */
+    padding-bottom: 32px;
+  }
+
+  .services_home p {
+    color: #191919;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    padding: 32px 16px 40px;
+    max-width: 356px;
+    margin: 0 auto;
+  }
+
+  .wedding,
+  .party_time,
+  .photoshoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    padding: 0 208px;
+  }
+
+  .wedding_text,
+  .party_time_text,
+  .photoshoot_text {
+    padding: 43px 0;
+  }
+
+  .text {
+    /* padding: 0 19px;
+    margin: 24px 0 0 0; */
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .wedding img,
+  .party_time img,
+  .photoshoot img {
+    width: 320px;
+    height: 380px;
+    display: inline-block;
+  }
+
+  .wedding h2,
+  .party_time h2,
+  .photoshoot h2 {
+    color: #725a58;
+    font-family: "Baskervville", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    padding: 24px 0 16px;
+    text-align: left;
+    padding: 24px 19px 16px;
+  }
+
+  .wedding .cost img,
+  .party_time .cost img,
+  .photoshoot .cost img {
+    width: 11.67px;
+    height: 15.83px;
+  }
+
+  .wedding .time img,
+  .party_time .time img,
+  .photoshoot .time img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cost,
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 12px;
+    margin-left: 19px;
+  }
+
+  .cost img,
+  .time img {
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .cost p,
+  .time p {
+    color: #191919;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .wedding h3,
+  .party_time h3,
+  .photoshoot h3 {
+    color: #191919;
+    font-family: "Baskervville", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    justify-content: left;
+    padding-left: 0 19px;
+  }
+
+  .wedding p,
+  .party_time p,
+  .photoshoot p {
+    color: #191919;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    justify-content: left;
+  }
+
+  .btn_get {
+    background-color: #fae9e7;
+    color: #5e4a49;
+    font-family: "Baskervville", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    border: 1px solid #5e4a49;
+    width: 322px;
+    height: 54px;
+    margin: 24px 18px;
+  }
+}
