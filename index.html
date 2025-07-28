@@ -145,6 +145,42 @@
           </div>
         </div>
       </section>
+
+      <section class="thirdMain">
+        <div class="thirdMain_container">
+          <h2>YOU ARE A STAR</h2>
+          <span></span>
+          <p class="thirdMain_txt">Shine effortlessly, embrace your unique features with absolute confidence.</p>
+          <button class="btn_thirdMain">My work</button>
+        </div>
+        <div class="thirdMain_img">
+          <img src="./img/home_star_1.png" alt="star1">
+          <img src="./img/home_star_2.png" alt="star2">
+          <img src="./img/home_star_3.png" alt="star3">
+          <img src="./img/home_star_4.png" alt="star4">
+        </div>
+        <div class="thirdMain_container_2">
+          <img src="./img/double_quotation_marks.png" alt="double_quotation_marks">
+          <p class="thirdMain_txt_2">Carla is the best! She made me the night's brightest star! She stayed with me the whole  wedding ensuring I always looked and felt wonderful!! </p>
+        </div>
+        <div class="thirdMain_slider">
+          <button class="prev">&lt;</button>
+          <div class="slides">
+            <div class="slide active">
+              <img src="./img/Janny.png" alt="product1">
+            </div>
+            <div class="slide">
+              <img src="./img/Janny.png" alt="product2">
+            </div>
+            <div class="slide">
+              <img src="./img/Janny.png" alt="product3">
+            </div>
+          </div>
+          <button class="next">&gt;</button>
+        </div>
+      </section>
+
+
     </main>
 
     <footer>
@@ -198,6 +234,26 @@
         hamburger.classList.toggle("active");
         navMenus.classList.toggle("active");
       });
+
+
+      const slides = document.querySelector('.slides');
+      const slideCount = document.querySelectorAll('.slide').length;
+      let currentIndex = 0;
+
+      document.querySelector('.next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slideCount;
+        updateSlide();
+      });
+
+      document.querySelector('.prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        updateSlide();
+      });
+
+      function updateSlide() {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
     </script>
   </body>
 </html>
