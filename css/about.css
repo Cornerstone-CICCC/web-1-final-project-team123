@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  background-color: #f8f6f4;
+  padding-bottom: 40px;
+}
+
+.about h1 {
+  text-align: center;
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+}
+
+.heading-word {
+  font-size: 36px;
+  color: #e3b6b1;
+}
+
+.heading-rest {
+  font-size: 33px;
+  color: #725a58;
+}
+
+.heading-word,
+.heading-rest {
+  display: inline-block;
+}
+
+.instruction {
+  background-color: #fae9e7;
+  padding-bottom: 40px;
+}
+
+.instruction img {
+  width: 100%;
+}
+
+.instruction_text {
+  padding: 24px;
+}
+
+.instruction_text h1 {
+  font-family: "Baskervville", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #725a58;
+  padding: 40px 16.5px 24px 16.5px;
+}
+
+.instruction_text p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  padding: 0 16.5px 24px;
+}
+
+.btn_myWork {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #5e4a49;
+  color: #5e4a49;
+  width: 160px;
+  height: 53px;
+  background-color: #fae9e7;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Baskervville", sans-serif;
+  margin: 40px auto;
+}
+
+.our_brands {
+  text-align: center;  
+  padding: 40px 0 24px;
+}
+
+.our_brands h2 {
+  color: #725a58;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Baskervville", sans-serif;
+}
+
+.brand_logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin-bottom: 68px;
+  }
+  .heading-word {
+    font-size: 48px;
+  }
+  .heading-rest {
+    font-size: 80px;
+  }
+  .instruction {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .instruction img {
+    width: 351px;
+    height: 424px;
+    margin: 108px 40px 108px 135px;
+  }
+  .instruction_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: flex-start;
+    margin: 127.5px 0;
+  }
+  .instruction_text h1 {
+    font-size: 48px;
+  }
+  .instruction_text p {
+    font-size: 18px;
+  }
+  .instruction_text h1,
+  .instruction_text p {
+    text-align: left;
+    padding: 0;
+  }
+  .btn_myWork {
+    height: 62px;
+    margin: 40px 0;
+    align-self: flex-start;
+  }
+  .our_brands h2 {
+    margin: 36px 0 0 44px;
+  }
+  .brand_logos {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    margin: 44px 267.75px 36px;
+  }
+}

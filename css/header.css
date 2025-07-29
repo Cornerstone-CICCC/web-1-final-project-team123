@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f8f6f4;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header_desktop {
+  display: none;
+}
+
+.header_mobile {
+  width: 100%;
+}
+
+.mobile_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  padding: 10px 16px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2001;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background-color: #725a58;
+}
+
+.mobile_logo img {
+  height: 100px;
+  width: 95.6px;
+}
+
+.mobile_insta img {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.nav-menus {
+  background-color: #f8f6f4;
+  font-family: "Baskervville", sans-serif;
+  text-align: center;
+
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 117px;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+.nav-menus.active {
+  display: flex;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(12px, 14px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -8px);
+}
+
+.mobile_menu {
+  padding: 58px 0 56px 0;
+}
+
+.mobile_menu li {
+  font-size: 32px;
+  list-style: none;
+  padding-bottom: 24px;
+}
+
+.mobile_menu li:last-child {
+  padding-bottom: 0;
+}
+
+.mobile_menu a {
+  text-decoration: none;
+  color: #725a58;
+
+  position: relative;
+}
+
+.mobile_menu li a::before {
+  content: "";
+  width: calc(100% - 1px);
+  height: 1.3px;
+  background-color: rgb(114, 90, 88);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.mobile_menu li a:hover::before {
+  transform: scaleX(1);
+}
+
+.header_wrap address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 27px;
+}
+
+.header_wrap .header_text {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #191919;
+  letter-spacing: 0.5px;
+  margin-bottom: 23px;
+}
+
+@media screen and (min-width: 1350px) {
+  .header_mobile {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .header_desktop {
+    display: block;
+    background-color: #f8f6f4;
+    width: 100%;
+  }
+
+  .header_desktop .header_container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .header_container ul li {
+    position: relative;
+  }
+
+  .left_menu li::before {
+    content: "";
+    width: calc(100% - 59px);
+    height: 1.3px;
+    background-color: rgb(114, 90, 88);
+    position: absolute;
+    left: 29px;
+    bottom: 0px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+  }
+
+  .left_menu li:hover::before {
+    transform: scaleX(1);
+  }
+
+  .left_menu {
+    padding-right: 80px;
+  }
+
+  .left_menu a {
+    padding: 0 31.17px;
+    border-right: 1px solid rgba(227, 182, 177, 1);
+    white-space: nowrap;
+  }
+
+  .left_menu li:last-child a {
+    border-right: none;
+  }
+
+  .right_menu {
+    padding-left: 80px;
+  }
+
+  .right_menu a {
+    padding: 0 31.17px;
+    border-right: 1px solid rgba(227, 182, 177, 1);
+    white-space: nowrap;
+  }
+
+  .right_menu li:last-child a {
+    border-right: none;
+  }
+
+  .right_menu li::before {
+    content: "";
+    width: calc(100% - 59px);
+    height: 1.3px;
+    background-color: rgb(114, 90, 88);
+    position: absolute;
+    left: 29px;
+    bottom: 5px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+  }
+
+  .right_menu li:hover::before {
+    transform: scaleX(1);
+  }
+
+  .right_menu li:last-child::before {
+    display: none;
+  }
+
+  .header_container {
+    padding: 32px 116px;
+  }
+
+  .header_container a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(114, 90, 88, 1);
+  }
+}
